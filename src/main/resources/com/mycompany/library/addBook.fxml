@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="286.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.library.AddBookController">
+   <children>
+      <VBox layoutX="15.0" prefHeight="240.0" prefWidth="600.0" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="isbnTxt" promptText="Book isbn">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="titleTxt" layoutX="20.0" layoutY="30.0" promptText="Book title">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox prefHeight="54.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+      <Button layoutY="243.0" mnemonicParsing="false" onAction="#saveBook" prefHeight="42.0" prefWidth="299.0" text="Save" />
+      <Button layoutX="299.0" layoutY="243.0" mnemonicParsing="false" onAction="#cancel" prefHeight="42.0" prefWidth="300.0" text="Cancel" />
+      <ComboBox fx:id="authorCombo" layoutX="10.0" layoutY="154.0" prefHeight="25.0" prefWidth="580.0" promptText="Select Author" />
+      <ComboBox fx:id="publisherCombo" layoutX="9.0" layoutY="114.0" prefWidth="580.0" promptText="Select Publisher" />
+   </children>
+   
+</AnchorPane>
